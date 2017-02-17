@@ -1,0 +1,136 @@
+body {
+	text-align: center;
+	background: #a46740;
+}
+
+.game {
+	border-radius: 10px;
+	border: 1px solid #666;
+	background: #888;
+	width: 480px;
+	height: 395px;
+	margin: 100px auto;
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+}
+
+.cards {
+	width: 380px;
+	height: 400px;
+}
+
+.acard {
+	-webkit-perspective: 600;
+	width: 46px;
+	height: 66px;
+	position: absolute;
+	transition: all .5s;
+	cursor: pointer;
+}
+
+.face {
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition-property: opacity, transform, box-shadow;
+	transition-duration: .5s;
+	backface-visibility: hidden;
+}
+
+.back {
+	background: #999 url(../img/pocker.jpg) -31px -18px;
+	transform: rotateY(-180deg);
+	z-index: 10;
+}
+
+.front {
+	background: #efefef url(../img/pocker.jpg) -692px -161px;
+	
+	z-index: 8;
+}
+
+.acard:hover .face, .card-flipped .face {
+	box-shadow: 0 0 10px #aaa;
+}
+
+.card-flipped .front {
+	transform:  rotateY(180deg);
+	z-index: 8;
+}
+
+.card-flipped .back {
+	transform: rotateY(0deg);
+	z-index: 10;
+}
+
+.card-removed {
+	opacity: 0;
+}
+
+.card-wrap {
+	width: 340px;
+	height: 360px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.aa {
+	background-position: -81px -18px;
+}
+
+.ab {
+	background-position: -133px -18px;
+}
+
+.ac {
+	background-position: -184px -18px;
+}
+
+.ad {
+	background-position: -234px -18px;
+}
+
+.ae {
+	background-position: -284px -18px;
+}
+.af {
+	background-position: -336px -18px;
+}
+
+.aj {
+	background-position: -381px -18px;
+}
+
+.ah {
+	background-position: -437px -18px;
+}
+
+.ai {
+	background-position: -489px -18px;
+}
+
+.aj {
+	background-position: -539px -18px;
+}
+
+.ak {
+	background-position: -589px -18px;
+}
+
+.al {
+	background-position: -640px -18px;
+}
+
+.am {
+	background-position: -692px -18px;
+}
+
+.an {
+	background-position: -31px -90px;
+}
+
+.card-removed {
+	opacity: 0;
+}
